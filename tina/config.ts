@@ -47,6 +47,11 @@ export default defineConfig({
         fields: [
           {
             type: "string",
+            name: "type",
+            label: "Type",
+          },
+          {
+            type: "string",
             name: "title",
             label: "Title",
             isTitle: true,
@@ -56,6 +61,13 @@ export default defineConfig({
             type: "string",
             name: "description",
             label: "Description",
+          },
+          {
+            type: "string",
+            name: "tags",
+            label: "Tags",
+            description: "Tags for this post",
+            list: true,
           },
           {
             type: "rich-text",
